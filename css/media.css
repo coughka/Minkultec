@@ -7,8 +7,7 @@
     .authors-block:nth-child(10), .authors-block:nth-child(11),
     .authors-block:nth-child(12), .authors-block:nth-child(13),
     .authors-block:nth-child(14), .authors-block:nth-child(15),
-    .authors-block:nth-child(16), .authors-block:nth-child(17),
-    .authors-block:nth-child(18) {
+    .authors-block:nth-child(16) {
         grid-column:span 6;
         grid-row:auto;
     }
@@ -51,10 +50,6 @@
 
     .team-block {
         grid-column:span 6;
-    }
-
-    .support-block:nth-child(3) {
-        margin:0;
     }
 
     .overlay-content {
@@ -106,6 +101,11 @@
         justify-self:start;
     }
 
+    .overlay .closebtn {
+        top:-1.25rem;
+        right:1rem;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -129,14 +129,29 @@
     .overlay-content-block {
         grid-column:span 4;
     }
+
+    .header-block {
+        grid-template-rows: auto;
+    }
+
+    .header-title {
+        grid-row:auto;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .show {
         flex-direction:column;
+        top:3.25rem;
+        right:-1.5rem;
     }
 
     .dropdown-content a {
+        margin-bottom:0.25rem;
+        text-align:center;
+    }
+
+    .show a {
         margin-bottom:0.25rem;
     }
 
@@ -151,5 +166,7 @@
 }
 
 @media screen and (min-width: 1800px) {
-
+    .authors-content, .team-content, .footer-content, .read-content, .support-content, .how-help-content {
+        width:60%;
+    }
 }
