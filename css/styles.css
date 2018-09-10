@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i&subset=cyrillic-ext');
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 @import url("materialize.css");
+@import url("animate.css");
 @import url("styles-authors.css");
 @import url("../css/media.css");
 
@@ -85,7 +86,9 @@ section {
       display:-ms-grid;
       display:grid;
 
-          grid-template-columns:repeat(12,1fr);
+          -ms-grid-columns:(1fr)[12];
+
+              grid-template-columns:repeat(12,1fr);
       -webkit-box-align:center;
           -ms-flex-align:center;
               align-items:center;
@@ -106,11 +109,16 @@ section {
   }
   
   .header-block {
+      -ms-grid-column-span:8;
       grid-column:span 8;
-      justify-self:center;
-      align-self:stretch;
+      -ms-grid-column-align:center;
+          justify-self:center;
+      -ms-grid-row-align:stretch;
+          align-self:stretch;
+      display:-ms-grid;
       display:grid;
-      grid-template-rows:repeat(3,1fr);  
+      -ms-grid-rows:(1fr)[3];
+          grid-template-rows:repeat(3,1fr);  
   }
   
   .header-title {
@@ -159,6 +167,7 @@ section {
   }
   
   .menu-index {
+      -ms-grid-column-span:4;
       grid-column:span 4;
       background-color:gold;
       justify-items:center; 
@@ -202,18 +211,22 @@ section {
     
     background-color: hsla(46, 97%, 70%, 0.95);
     overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
 }
 
 .overlay-content {
     grid-gap:1rem;
-    grid-template-columns: repeat(16,1fr);
+    -ms-grid-columns: (1fr)[16];
+        grid-template-columns: repeat(16,1fr);
     width:50%;
     margin:0 auto;
     padding:1rem 0;
 }
 
 .title {
+    -ms-grid-column-span:16;
     grid-column:span 16;
     margin:1rem 0;
 }
@@ -226,9 +239,13 @@ section {
     height:12rem;
     background-color:hsl(0, 0%, 95%);
     border:5px solid hsl(0, 0%, 25%);
+    -ms-grid-column-span:2;
     grid-column:span 2;
+    display:-ms-grid;
     display:grid;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 .dropdown-content {
@@ -251,7 +268,8 @@ section {
 }
 
 .support-block-sublock img:hover {
-    animation: pulse 1s 0.5s infinite;
+    -webkit-animation: pulse 1s 0.5s infinite;
+            animation: pulse 1s 0.5s infinite;
 }
 
 .ulej svg {
@@ -264,6 +282,8 @@ section {
     font-size: 36px;
     color: #818181;
     display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -296,14 +316,16 @@ section {
 
 .authors-block {
     min-height:10vh;
+    -ms-grid-column-span:4;
     grid-column:span 4;
+    -ms-grid-row-span:2;
     grid-row:span 2;
     position:relative;
     -webkit-filter:grayscale(75%) sepia(25%);
             filter:grayscale(75%) sepia(25%);
 }
 
-.authors-block h2::after {
+.authors-block h2::before {
     width:10rem;
     height:5px;
     background-color:hsl(0, 0%, 25%);
@@ -313,17 +335,25 @@ section {
 }
 
 .authors-block:first-child {
+    -ms-grid-column-span:12;
     grid-column:span 12;
     text-align:center;
 }
 
 .authors-block:nth-child(2) {
+    -ms-grid-row:4;
+    -ms-grid-row-span:2;
     grid-row:4/span 2;
+    -ms-grid-column-span:4;
     grid-column:span 4;
 }
 
 .authors-block:nth-child(3) {
+    -ms-grid-row:3;
+    -ms-grid-row-span:2;
     grid-row:3/span 2;
+    -ms-grid-column:7;
+    -ms-grid-column-span:6;
     grid-column:7/span 6;
 }
 
@@ -385,6 +415,7 @@ section {
     -ms-grid-row: 9;
     -ms-grid-row-span: 2;
     grid-row: 10/span 2;
+    -ms-grid-column-span:4;
     grid-column:span 4;
 }
 
@@ -392,6 +423,7 @@ section {
     -ms-grid-row: 17;
     -ms-grid-row-span: 2;
     grid-row: 17/span 2;
+    -ms-grid-column-span:6;
     grid-column:span 6;
 }
 
@@ -435,6 +467,7 @@ section {
     -ms-grid-row: 14;
     -ms-grid-row-span: 2;
     grid-row: 15/span 2;
+    -ms-grid-column-span:5;
     grid-column:span 5;
 }
 
@@ -520,10 +553,12 @@ picture {
 }
 
 .team-block:first-child {
+    -ms-grid-column-span:4;
     grid-column:span 4;
 }
 
 .team-block {
+    -ms-grid-column-span:2;
     grid-column:span 2;
 }
 
@@ -539,7 +574,9 @@ footer {
     background-color:rgba(0,0,0,0.1);
     padding:1rem 0;
     margin-top:5vh;
-    align-self:end;
+    -ms-flex-item-align:end;
+        -ms-grid-row-align:end;
+        align-self:end;
 }
 
 footer p {
@@ -568,10 +605,12 @@ footer h3 {
 }
 
 .footer-block {
+    -ms-grid-column-span:4;
     grid-column:span 4;
 }
 
 .footer-block:nth-child(2) {
+    -ms-grid-column-span:8;
     grid-column:span 8;
     line-height:1;
     -ms-grid-column-align:end;
@@ -626,8 +665,11 @@ form label {
     background-color:rgba(0,0,0,0.75);
     min-height:5vh;
     text-align:center;
+    display:-ms-grid;
     display:grid;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 .subfooter a, .subfooter i {
@@ -635,8 +677,11 @@ form label {
 }
 
 .btn-floating {
+    display:-ms-grid;
     display:grid;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
     justify-items:center;
 }
 
@@ -647,15 +692,19 @@ form label {
 /*SUPPORT*/
 
 .support-img {
+    -ms-grid-column-span:12;
     grid-column:span 12;
 }
 
 .disclaimer {
+    -ms-grid-column-span:12;
     grid-column:span 12;
-    columns:2;
+    -webkit-columns:2;
+            columns:2;
 }
 
 .support-title {
+    -ms-grid-column-span:8;
     grid-column:span 8;
 }
 
@@ -665,6 +714,7 @@ form label {
 }
 
 .menu-support {
+    -ms-grid-column-span:4;
     grid-column:span 4;
     text-align:right;
     margin:0;
@@ -672,7 +722,9 @@ form label {
 
 .support-content {
     width:75%;
-    align-items:center;
+    -webkit-box-align:center;
+        -ms-flex-align:center;
+            align-items:center;
 }
 
 .support header {
@@ -683,31 +735,9 @@ form label {
     text-align:center;
 }
 
-@media screen and (max-height: 768px) {
-    .overlay-content {
-        width:75%;
-    }
-}
 
 @media screen and (max-height: 600px) {
-    .overlay-content {
-        width:95%;
-    }
 
-    .overlay-content-block {
-        grid-column:span 3;
-    }
-
-    .overlay-content-block:last-child {
-        display:none;
-    }
-
-
-
-    .menu-index button {
-        margin-right:1rem;
-    }
 }
-
 
 

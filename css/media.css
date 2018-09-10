@@ -106,6 +106,18 @@
         right:1rem;
     }
 
+    .overlay-content-block {
+        -ms-grid-column-span:3;
+        grid-column:span 3;
+    }
+
+    .overlay-content-block:last-child {
+        display:none;
+    }
+
+    .menu-index button {
+        margin-right:1rem;
+    }
 }
 
 @media screen and (max-width: 425px) {

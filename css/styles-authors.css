@@ -9,13 +9,12 @@
 .menu-authors .dropdown {
     margin:1rem;
     z-index:9999;
-    cursor:pointer;
-    
+    cursor:pointer;   
 }
 
 .menu-authors .dropdown-content {
     border:none;
-    background-color:gold;
+    background-color:hsl(51, 100%, 50%);
     margin-right:5rem;
 }
 
@@ -50,7 +49,6 @@
 .intro h2 {
     writing-mode: vertical-rl;
     margin:0 0 1rem 0;
-    font-family:"Montserrat", sans-serif;
     grid-row:span 2;
     justify-self: start;
 }
@@ -59,7 +57,7 @@
     text-align:left;
     padding:1rem;
     margin:1rem 1rem 0 0;
-    background-color:rgba(255,99,71,0.75);
+    background-color:hsla(9, 100%, 64%, 0.75);
     border-radius:1rem;
     display:inline-block;    
 }
@@ -73,7 +71,7 @@
     margin-top:1rem;
 }
 
-.text p {
+.text p, .support p {
     margin-bottom: 1.2rem;
     font-family:'Lora', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:1.414rem;
