@@ -220,7 +220,7 @@ section {
     grid-gap:1rem;
     -ms-grid-columns: (1fr)[16];
         grid-template-columns: repeat(16,1fr);
-    width:50%;
+    width:80%;
     margin:0 auto;
     padding:1rem 0;
 }

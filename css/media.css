@@ -32,15 +32,11 @@
     .team-block {
         grid-column: span 4;
     }
-
-    .overlay-content {
-        width:60%;
-    }
 }
 
 @media screen and (max-width: 768px) {
     .authors-content, .team-content, .footer-content, .read-content,
-     .how-help-content, .menu-authors, .support-content, .menu-support {
+     .how-help-content, .menu-authors, .support-content, .menu-support, .overlay-content {
         width:95%;
     }
 
@@ -50,10 +46,6 @@
 
     .team-block {
         grid-column:span 6;
-    }
-
-    .overlay-content {
-        width:75%;
     }
 }
 
@@ -87,10 +79,6 @@
 
     .footer-block:nth-child(2) {
         grid-column:span 6;
-    }
-
-    .overlay-content {
-        width:85%;
     }
 
     .disclaimer, .collapsible-body p:first-child {
