@@ -32,6 +32,11 @@
     .team-block {
         grid-column: span 4;
     }
+
+    .overlay-content-block {
+        grid-column:span 4;
+        min-height:25vw;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -45,7 +50,11 @@
     }
 
     .team-block {
-        grid-column:span 6;
+        grid-column:span 3
+    }
+
+    .overlay-content-block {
+        height:30vw;
     }
 }
 
@@ -73,7 +82,7 @@
         justify-items:end;
     }
 
-    .footer-block {
+    .footer-block, .team-block {
         grid-column:span 6;
     }
 
@@ -168,5 +177,11 @@
 @media screen and (min-width: 1800px) {
     .authors-content, .team-content, .footer-content, .read-content, .support-content, .how-help-content {
         width:60%;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .hidden-title {
+        display:none;
     }
 }

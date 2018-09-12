@@ -72,15 +72,15 @@
 }
 
 .text p, .support p {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.25rem;
     font-family:'Lora', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size:1.414rem;
-    color:rgba(0,0,0,0.75);
-    line-height: 1.2;
-    margin-top: 1.414rem;
+    font-size:1.25rem;
+    color:hsla(0, 0%, 0%, 0.75);
+    line-height: 1.5;
     min-height: 90%;
     display: block;
     word-wrap: break-word;
+
 }
 
 .divider {
@@ -141,7 +141,7 @@
 }
 
 .support-block-sublock p {
-    font-size:1.414rem;
+    font-size:1.25rem;
     font-weight:800;
     padding:1rem;
 }
