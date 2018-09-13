@@ -36,7 +36,6 @@
     grid-template-columns:1fr 4fr;
 }
 
-
 .intro img {
     width:75%;
 }
@@ -165,9 +164,7 @@
 
 /* the end*/
 
-
-
-.morty:before {
+/*.deco:before {
     content:"";
     display: block;
     position: absolute;
@@ -179,7 +176,24 @@
     border-bottom: none;
     mix-blend-mode: multiply;
     z-index: 2;    
+}*/
+
+.deco:before {
+    content:"";
+    display: block;
+    position: absolute;
+    top: 0;
+    width:100vw;
+    margin-left:-1.25vw;
+    height:45vw;
+    mix-blend-mode: multiply;
+    background:linear-gradient(to top left, #75d775, #321a5b);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transform:rotate(180deg);
 }
+
+
+
 
 /*DROPDOWN */
 
