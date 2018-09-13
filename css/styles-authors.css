@@ -204,10 +204,11 @@
 }
 
 .pis:before, .rub:before, .sin:before, .pis:before, .szu:before, .vis:before {
-    mix-blend-mode: multiply;
-    background: linear-gradient(to top left, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    mix-blend-mode: hard-light;
+    background: linear-gradient(to top left, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
+    transform:rotate(0deg);
 }
 
 
@@ -243,8 +244,8 @@
 }
 
 .dropdown-container a {
-    color: black;
-    background-color: hsl(9, 100%, 64%);
+    color: hsl(0, 0%, 95%);
+    background-color: hsl(0, 0%, 0%);
     padding: 1rem;
     text-decoration: none;
     font-family: "Anonymous Pro", 'Courier New', Courier, monospace;
