@@ -186,12 +186,29 @@
     width:100vw;
     margin-left:-1.25vw;
     height:45vw;
-    mix-blend-mode: multiply;
-    background:linear-gradient(to top left, #75d775, #321a5b);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transform:rotate(180deg);
 }
 
+.aku:before, .arl:before, .bah:before, .bal:before, .bra:before {
+    background:linear-gradient(to top left, #75d775, #321a5b);
+    mix-blend-mode: hard-light;
+}
+
+.hlo:before, .kal:before, .kalia:before, .kas:before, .mar:before {
+    -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
+    transform:rotate(0deg);
+    mix-blend-mode: multiply;
+    background: linear-gradient(to top left, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
+}
+
+.pis:before, .rub:before, .sin:before, .pis:before, .szu:before, .vis:before {
+    mix-blend-mode: multiply;
+    background: linear-gradient(to top left, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
 
 
 
@@ -241,7 +258,5 @@
     -webkit-transition:1s;
     -o-transition:1s;
     transition:1s;
-    -webkit-animation:shake 1s;
-            animation:shake 1s;
 }
 

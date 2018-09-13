@@ -481,6 +481,7 @@ p {
 
 figure {
     margin:0;
+    z-index:-1;
 }
 
 .support figure {
@@ -499,8 +500,8 @@ img {
     width:100%;
 }
 
-.authors img, .team img {
-    -webkit-filter:grayscale(75%) sepia(25%);
+.authors img, .team img, .read img {
+    -webkit-filter:grayscale(100%) contrast(1);
     filter: grayscale(100%) contrast(1);
 }
 
