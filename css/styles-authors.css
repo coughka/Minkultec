@@ -50,6 +50,8 @@
     margin:0 0 1rem 0;
     grid-row:span 2;
     justify-self: start;
+    align-self:start;
+    transform:rotate(180deg);
 }
 
 .text h3 {
