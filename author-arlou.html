@@ -3,6 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Мiнкульт. Уладзімір Арлоў">
+    <meta property="og:site_name" content="Лiтаратурны часопic">
+    <meta property="og:url" content="http://www.minkult.me/">
+    <meta property="og:description" content="Аўтар шматлікіх кніг прозы, паэзіі, гістарычных эсэ. Ляўрэат некалькіх літаратурных прэмій">
+    <meta property="og:image" content="img/minkult-pattern.jpg">
+    <link rel="icon" type="image/png" href="img/insight.png"/>
+
     <title>MNKLT. Уладзімір Арлоў</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
@@ -35,7 +42,7 @@
                                     <figcaption>ximik.info</figcaption>
                                 </figure>
                                 <p class="bio">Нарадзіўся ў 1953 г. у Полацку. Скончыў гістарычны факультэт БДУ.
-                                    Аўтар шматлікіх кніг прозы, паэзіі, гістарычных эсэ. Ляўрэат некалькіх літаратурных прэмій, у тым ліку -- "Эўрапейскі паэт свабоды" (Гданьск, 2010).</p>          
+                                    Аўтар шматлікіх кніг прозы, паэзіі, гістарычных эсэ. Ляўрэат некалькіх літаратурных прэмій, у тым ліку &mdash; "Эўрапейскі паэт свабоды" (Гданьск, 2010).</p>          
                             <div class="divider"></div>
                             <div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>
                         </div>
@@ -157,28 +164,7 @@
             });
         });
     </script>
-    <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn', ".fas fa-bars")) {
-            
-                var dropdowns = document.getElementsByClassName("dropdown-container");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-            }
-            }
-    </script>
+    <script src="js/dropdw.js"></script>
 
     
     </body>

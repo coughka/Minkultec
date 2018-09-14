@@ -12,7 +12,6 @@ body {
     line-height: 1.45;
     color: hsl(0, 0%, 5%);
     background-color:hsl(0,0%,95%);
-
 }
 
 section {
@@ -704,6 +703,8 @@ form label {
 
 /*DECORATION */
 
+
+/*
  .column::after{
     content: '';
     position: absolute;
@@ -713,31 +714,47 @@ form label {
     height: 100%;
   }
 
+  
+
   .lense-purple::after{
     mix-blend-mode: hard-light;
+    background: -webkit-gradient(linear, right bottom, left top, from(#75d775), to(#321a5b));
+    background: -webkit-linear-gradient(bottom right, #75d775, #321a5b);
+    background: -o-linear-gradient(bottom right, #75d775, #321a5b);
     background: linear-gradient(to top left, #75d775, #321a5b);
  }
 
  .lense-gold::after{
     mix-blend-mode: multiply;
+    background: -webkit-gradient(linear, right bottom, left top, from(hsl(50, 100%, 50%)), to(hsl(8, 80%, 56%)));
+    background: -webkit-linear-gradient(bottom right, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
+    background: -o-linear-gradient(bottom right, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
     background: linear-gradient(to top left, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
  }
 
  .lense-munsel::after{
     mix-blend-mode: multiply;
+    background: -webkit-gradient(linear, right bottom, left top, from(hsl(50, 100%, 50%)), to(hsl(345, 91%, 48%)));
+    background: -webkit-linear-gradient(bottom right, hsl(50, 100%, 50%), hsl(345, 91%, 48%));
+    background: -o-linear-gradient(bottom right, hsl(50, 100%, 50%), hsl(345, 91%, 48%));
     background: linear-gradient(to top left, hsl(50, 100%, 50%), hsl(345, 91%, 48%));
  }
 
  .lense-cambridge::after{
     mix-blend-mode: multiply;
+    background: -webkit-gradient(linear, right bottom, left top, from(hsl(345, 91%, 48%)), to(hsl(165, 21%, 69%)));
+    background: -webkit-linear-gradient(bottom right, hsl(345, 91%, 48%), hsl(165, 21%, 69%));
+    background: -o-linear-gradient(bottom right, hsl(345, 91%, 48%), hsl(165, 21%, 69%));
     background: linear-gradient(to top left, hsl(345, 91%, 48%), hsl(165, 21%, 69%));
  }
 
  .lense-pineapple::after{
     mix-blend-mode: hard-light;
+    background: -webkit-gradient(linear, right bottom, left top, from(hsl(291, 28%, 29%)), to(hsl(165, 21%, 69%)));
+    background: -webkit-linear-gradient(bottom right, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
+    background: -o-linear-gradient(bottom right, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
     background: linear-gradient(to top left, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
  }
 
 
-  
-
+  */

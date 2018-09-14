@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MNKLT. Альгерд Бахарэвіч</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Мiнкульт. Альгерд Бахарэвіч">
+    <meta property="og:site_name" content="Лiтаратурны часопic">
+    <meta property="og:url" content="http://www.minkult.me/">
+    <meta property="og:description" content="Альгерд Бахарэвіч. Пісьменьнік. Нарадзіўся і жыве ў Менску.">
+    <meta property="og:image" content="img/minkult-pattern.jpg">
+    <link rel="icon" type="image/png" href="img/insight.png"/>  
+
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/media.css" />
     <script src="js/scroll to top.js"></script>
@@ -33,7 +40,7 @@
                                     <img src="img/backarevicz_minkult.jpg" alt="Альгерд Бахарэвіч">
                                     <figcaption>Фота Юлii Цiмафеевай</figcaption>
                                 </figure>
-                                <p class="bio">Альгерд Бахарэвіч - пісьменьнік. Нарадзіўся і жыве ў Менску. Аўтар некалькіх раманаў і зборнікаў эсэ. У 2017 годзе выдаў 900-старонкавы раман "Сабакі Эўропы", які атрымаў прэмію "Кніга году".</p>          
+                                <p class="bio">Альгерд Бахарэвіч &mdash; пісьменьнік. Нарадзіўся і жыве ў Менску. Аўтар некалькіх раманаў і зборнікаў эсэ. У 2017 годзе выдаў 900-старонкавы раман "Сабакі Эўропы", які атрымаў прэмію "Кніга году".</p>          
                             <div class="divider"></div>
                             <div class="ya-share2" data-services="vkontakte,facebook,twitter,telegram"></div>
                         </div>
@@ -150,28 +157,7 @@
             });
         });
     </script>
-    <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn', ".fas fa-bars")) {
-            
-                var dropdowns = document.getElementsByClassName("dropdown-container");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                }
-                }
-            }
-            }
-    </script>
+    <script src="js/dropdw.js"></script>
 
     
     </body>

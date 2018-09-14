@@ -28,12 +28,15 @@
 }
 
 .intro, .text {
+    -ms-grid-column-span:12;
     grid-column:span 12;
 }
 
 .intro {
+    display:-ms-grid;
     display:grid;
-    grid-template-columns:1fr 4fr;
+    -ms-grid-columns:1fr 4fr;
+        grid-template-columns:1fr 4fr;
 }
 
 .intro img {
@@ -42,16 +45,25 @@
 
 .bio {
     font-size:1rem;
+    -ms-grid-column:2;
     grid-column:2;
 }
 
 .intro h2 {
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
     margin:0 0 1rem 0;
+    -ms-grid-row-span:2;
     grid-row:span 2;
-    justify-self: start;
-    align-self:start;
-    transform:rotate(180deg);
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -ms-flex-item-align:start;
+        -ms-grid-row-align:start;
+        align-self:start;
+    -webkit-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+            transform:rotate(180deg);
 }
 
 .text h3 {
@@ -64,7 +76,9 @@
 }
 
 .help h3 {
-    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
     float:none;
 }
 
@@ -87,12 +101,15 @@
 .divider {
     background-color:rgba(0,0,0,0.75);
     height:5px;
+    -ms-grid-column-span:12;
     grid-column:span 12;
 }
 
 .ya-share2 {
+    -ms-grid-column-span:2;
     grid-column:span 2;
-    justify-self:center;
+    -ms-grid-column-align:center;
+        justify-self:center;
     margin-top:1rem;
 }
 
@@ -132,6 +149,7 @@
 }
 
 .support-block-sublock {
+    -ms-grid-column-span:4;
     grid-column:span 4;
     padding:0.5rem 1rem;
     min-height:12.5rem;
@@ -154,11 +172,14 @@
 }
 
 .collapsible-body p:first-child {
-    columns:2;
+    -webkit-columns:2;
+            columns:2;
 }
 
 .fa-bullhorn {
-    transform:rotate(-30deg);
+    -webkit-transform:rotate(-30deg);
+        -ms-transform:rotate(-30deg);
+            transform:rotate(-30deg);
 }
 
 
@@ -166,19 +187,6 @@
 
 /* the end*/
 
-/*.deco:before {
-    content:"";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin-left: -45vw;
-    border: 45vw solid transparent;
-    border-top-color: gold;
-    border-bottom: none;
-    mix-blend-mode: multiply;
-    z-index: 2;    
-}*/
 
 .deco:before {
     content:"";
@@ -188,11 +196,17 @@
     width:100vw;
     margin-left:-1.25vw;
     height:45vw;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    transform:rotate(180deg);
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    -webkit-transform:rotate(180deg);
+        -ms-transform:rotate(180deg);
+            transform:rotate(180deg);
 }
 
 .aku:before, .arl:before, .bah:before, .bal:before, .bra:before {
+    background:-webkit-gradient(linear, right bottom, left top, from(#75d775), to(#321a5b));
+    background:-webkit-linear-gradient(bottom right, #75d775, #321a5b);
+    background:-o-linear-gradient(bottom right, #75d775, #321a5b);
     background:linear-gradient(to top left, #75d775, #321a5b);
     mix-blend-mode: hard-light;
 }
@@ -200,17 +214,27 @@
 .hlo:before, .kal:before, .kalia:before, .kas:before, .mar:before {
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
-    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+            transform:rotate(0deg);
     mix-blend-mode: multiply;
+    background: -webkit-gradient(linear, right bottom, left top, from(hsl(50, 100%, 50%)), to(hsl(8, 80%, 56%)));
+    background: -webkit-linear-gradient(bottom right, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
+    background: -o-linear-gradient(bottom right, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
     background: linear-gradient(to top left, hsl(50, 100%, 50%), hsl(8, 80%, 56%));
 }
 
 .pis:before, .rub:before, .sin:before, .pis:before, .szu:before, .vis:before {
     mix-blend-mode: hard-light;
+    background: -webkit-gradient(linear, right bottom, left top, from(hsl(291, 28%, 29%)), to(hsl(165, 21%, 69%)));
+    background: -webkit-linear-gradient(bottom right, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
+    background: -o-linear-gradient(bottom right, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
     background: linear-gradient(to top left, hsl(291, 28%, 29%), hsl(165, 21%, 69%));
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 1%);
-    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+        -ms-transform:rotate(0deg);
+            transform:rotate(0deg);
 }
 
 
@@ -262,4 +286,3 @@
     -o-transition:1s;
     transition:1s;
 }
-
