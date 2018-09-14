@@ -637,7 +637,7 @@ form label {
             align-items:center;
 }
 
-.subfooter a, .subfooter i {
+.subfooter a, .subfooter i, .subfooter small {
     color:rgba(255,255,255,0.75);
 }
 
